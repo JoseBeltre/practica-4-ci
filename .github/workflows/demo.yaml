@@ -8,7 +8,9 @@ on:
 jobs:
   enviar-mensaje:
     runs-on: ubuntu-latest
-    steps: |
-      - run: curl \
-        -d "Acción realizada, Notificación de José Beltre | 2025-1241" \
-        ntfy.sh/devops-itla
+    steps:
+      - name: Enviar Nofiticación
+        run: |
+          curl \
+          -d "Acción realizada, Notificación de José Beltre | 2025-1241" \
+          ntfy.sh/devops-itla
