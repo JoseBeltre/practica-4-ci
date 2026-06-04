@@ -1,0 +1,14 @@
+name: aprendiendo-github-actions
+run-name: ${{ github.actor }} está ejecutando un CI
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  enviar-mensaje:
+    runs-on: ubuntu-latest
+    steps: |
+      - run: curl \
+        -d "Acción realizada, Notificación de José Beltre | 2025-1241" \
+        ntfy.sh/devops-itla
