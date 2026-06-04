@@ -1,2 +1,2 @@
-const name = prompt("¿Cuál es tu nombre?")
+const name = prompt("¿Cuál es tu nombre amigo?")
 alert("Hola " + name + " 🗣️🔥")
